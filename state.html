@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <h1>State</h1>
+        <style>
+            h1
+            {
+                color:rgb(192, 213, 255);
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .state  
+            {
+              background-image:linear-gradient(pink 30%, yellow 20%, green 50%);
+              margin:20px 20px 15px 25px;
+              padding: 15px 10px 20px 10px;
+              width: 70px;
+              height: 30px;
+              float: left;
+              border:10px double blue;
+              border:5px double red;
+              outline: 10px double black;
+              border-radius: 10px;
+              box-shadow: 10px 20px 5px 2px rgb(42, 196, 196);
+              /*transition:opacity 6s,background-color 5s,transform 5s;
+              transform-origin: 5px 6px;*/
+            }
+            @keyframes myanimation
+            {
+             0%{background-color: rgb(36, 194, 136);transform:scale(1) rotate(0deg);font-style: italic;font-size: small;text-transform: capitalize;font-weight: 100;word-spacing: 2px;box-shadow: 10px;}
+             25%{background-color: rgb(204, 8, 126);transform:scale(2.3) rotate(-90deg);font-style: normal;font-size: large;text-transform: lowercase;font-weight: 200;word-spacing:10px;box-shadow: 12;}
+             50%{background-color:rgb(35, 224, 220);transform:scale(3) rotate(180deg);font-style: oblique;font-size: larger;text-transform: uppercase;font-weight: 10px;word-spacing: normal;box-shadow: 5px;}
+             75%{background-color:rgb(91, 29, 185);transform:scale(5) rotate(50deg);font-style: italic;font-size: smaller;text-transform: none;font-weight: 2px;word-spacing: 0%;box-shadow: 0cqmax;}
+             100%{background-color:purple;transform:scale(1.1) rotate(100deg);font-style: normal;font-size: xx-small;text-transform: capitalize;font-weight: 100;word-spacing: 1px;box-shadow: inset;}
+            }
+
+             .state:hover
+            {
+             background-color: rgb(255, 0, 195);
+             opacity: 20px;
+             transform:scale3d(0.2,2,3);
+             transform:rotate3d(0.2,3,1,-180deg);
+             transform: matrix3d(1,2.2,0.3);
+             /*animation: myanimation 10s;*/
+            }
+            /* #aru
+            {
+              outline: 10px double black;
+              outline-offset:2px;
+                clear:both;
+            }*/
+
+        </style>
+    </head>
+   <body>
+    <div class="state">Maharastra</div>
+    <div class="state">Assam</div>
+    <div class="state" id="aru">Arunachal Pradesh</div>
+    <div class="state">Madya Pradesh</div>
+    <div class="state">Kerala</div>
+    <div class="state">Kokan</div>
+    </body>
+</html>    

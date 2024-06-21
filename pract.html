@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <!-- <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       
+    <style>
+        body
+        {
+          border:4px dotted rgb(0, 110, 255);
+          margin:10px;
+          background-color: rgb(208, 221, 72);
+        }
+        *
+        {
+          box-sizing:border-box;
+        }
+        .job
+        {
+            border:1px solid navy;
+            margin:10px;
+            padding:10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2vh;
+            font-weight: 700;
+            font-style: italic;
+            font-variant:small-caps;
+            color:rgba(232, 19, 129,0.9);
+            letter-spacing:3px;
+            word-spacing: 3px;
+            line-height: 1.3em;
+            word-wrap: break-word;
+            writing-mode:sideways-lr;
+            
+
+            /* white-space:pre; */
+            /* "unicode-bidi.: bidi-override;" */
+            /* direction: rtl; */
+        }
+        h1
+        {
+            word-spacing: 0.2em;
+            letter-spacing: 0.25em;
+            text-align:center;
+            font-variant: small-caps;
+            text-transform:capitalize;
+            text-indent: 10px;
+            text-shadow: 5px 2px 6px rgb(38, 209, 222); 
+        }
+        #des
+        {
+            border-top:5px ridge rgb(223, 53, 10);
+            border-bottom:5px groove rgb(44, 225, 12);
+            border-left:3px dotted rgb(10, 60, 223);
+            border-right:2px dashed rgb(233, 126, 5);
+            margin-top:20px;
+            margin-left: 5px;
+            margin-right: 7px;
+            margin-bottom: 15px;
+            padding: 10px;
+            height: 200px;
+            width: max-content;
+            color:blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .comp
+        {
+            border:2px solid rgb(196, 13, 19);
+            margin:10px;
+            padding: 10px;
+            color: white;
+            background-image:linear-gradient(green,rgb(28, 188, 220),pink);
+            float: left;
+            outline: 2px solid rgb(12, 153, 49);
+            outline-offset: 1px;
+            border-radius: 10px;
+            box-shadow: 10px 15px 5px 3px rgb(64, 136, 230);
+            transition: opacity 4s background-color 4s;
+            cursor:progress;
+            overflow:hidden;
+
+        }
+        @keyframes myanimation
+         {
+            0%{background-image:  linear-gradient(white,gray,purple);; transform: rotate(0deg) scale(2 );}
+            25%{background-color:violet; transform: rotate(50deg) scale(1.8);}
+            50%{background-color:peachpuff; transform: rotate(180deg) scale(2.7);}
+            70%{background-color: rgba(207, 19, 125, 0.4); transform: rotate(-90deg) scale(0.6);}
+            100%{background-color:gray; transform: rotate(90deg) scale(2.3);}
+        }
+        
+
+         .comp:hover 
+        {
+            background-color: aqua;
+            box-shadow: 5px 10px 15px 6px rgb(16, 205, 205);
+            /* transform: scale(2) rotate(80deg) translate(20px,30px); */
+            /* transform:skew(90deg); */
+            /* transform-origin:center right; */
+            /* transform: rotate3d(10px,20px,2px); */
+            /* transform: rotate3d(0.2,1,0.2,180deg); */
+            animation:myanimation 10s;
+          } 
+          li
+          {
+            list-style-image:url(star1.jpg);
+            color:purple;
+            
+          }
+          #aim
+          {
+            color:purple;
+            font-size: larger;
+          }
+          dl
+          {
+            color:navy;
+            font-size: large;
+          }
+          hr
+          {
+            color:aqua;
+            border-bottom:2px solid green;
+          }
+        .material-icons
+        {
+            color:rgb(85, 134, 232);
+        }
+        .ass
+        {
+            border:1px solid grey;
+            margin:10px;
+            padding: 10px;
+            float:left;
+            background-color: rgb(30, 91, 244);
+            color: white;
+        }
+         ul .nav
+        {
+          border:1px ridge purple;
+          margin:5px;
+          padding: 10px;
+          height: 20px;
+          width: 100px;
+          float: left;
+          background-image: linear-gradient(white,pink,purple);
+          cursor: progress;
+        }
+        #box
+        {
+            border:1px solid cadetblue;
+            margin:10px;
+            height: fit-content;
+            width: fit-content;
+        }
+        /* a:link
+        {
+          color:white;
+          border:1px solid navy;
+          margin: 10px;
+          padding: 10px 15px;
+          height:10px;
+          width: 30px;
+          background-color: rgb(36, 181, 221);
+          text-decoration: none;
+        }
+        a:active
+        {
+          color:navy;
+          background-image: linear-gradient(purple,white);
+        }
+        a:hover
+        {
+          color:rgb(239, 25, 60);
+          background-image: linear-gradient(purple,white,navy,);
+        } */
+         #navbar
+         {
+          background-color: rgb(60, 228, 30);
+          color: white;
+          height: 40px;
+          /* float: left; */
+          font-size: large;
+          padding: 0px;
+         }
+         #navbar .nav
+         {
+          color:white;
+          /* background-color: blue; */
+          height: 40px;
+          width: 20%;
+          float:left;
+          padding-top: 10px;
+          padding-left: 5px;
+
+         }
+         #navbar .navigation
+         {
+          color:white;
+          background-color: rgb(60, 228, 30);
+          width: 80%;
+          float:left;
+          height: 40px;
+         }
+         #navbar .navigation ul
+         {
+          list-style-type:none;
+          padding: 0px;
+          margin: 0px;
+         }
+         #navbar .navigation ul li
+         {
+          float: left;
+          padding-left: 20px;
+          padding-right: 20px;
+         }
+         #navbar .navigation ul li a:link
+         {
+          color:#ffff;
+          text-decoration: none;
+          padding-left: 20px;
+          padding-right: 20px;
+         }
+         #navbar .navigation ul li a:hover
+         {
+          background-color: #09a109;
+         }
+
+    </style>
+    </head>
+    <body>
+      <div id="navbar">
+        <div class="nav">LINKS</div>
+        <div class="navigation">
+          <ul>
+            <li><a href="state.html">State</a></li>
+            <li><a href="ass4.html">Ass4</a></li>
+            <li><a href="box.html">Box</a></li>
+            <li><a href="Classes.html">Classes</a></li>
+            <li> <a href="pract.html">Practise</a></li>
+          </ul>
+        </div>
+        </div>
+        <h1>Job Descriptive</h1>
+        <a href="#aim">Go to aim</a>
+       <div class="job"> The job description should accurately reflect the duties and responsibilities of the position. <br>When well-written, it produces a realistic picture of a job and answers the question, “What does the person in this role actually do?”</div>
+    
+        <div class="job">A job description not only describes the position’s responsibilities, it sets the foundation for recruiting, developing, and retaining talent and also sets the stage for optimum work performance by clarifying responsibilities, expected results, and evaluation of performance. It is also an important component to maintaining an equitable compensation system and ensuring legal compliance. The document should be revisited and updated in line with the annual performance evaluation cycle.</div>
+      <div id="des">
+         <span class="material-icons"> class</span><h2>Job Description Components</h2>
+       <div> A job description contains the following components: </div>
+        <div class="comp">Job title</div>
+        <div class="comp"> job purpose</div>
+        <div class="comp"> job duties </div>
+        <div class="comp"> responsibilities</div>
+        <div class="comp"> required qualifications</div>
+        <div class="comp"> preferred qualifications</div>
+        <div class="comp"> working conditions.  </div>
+      </div>  
+       
+     <div id="aim"> For employers, the primary aims of a job description are to:
+       <ol reversed="reversed">
+      <li> Clearly define the job role and set clear expectations</li>
+       <li>Attract applicants with the right qualifications and levels of experience</li>
+       <li>Discourage unsuitable candidates from applying </li>
+       <li>Provide a reference point for managers and HR to evaluate a new joiner’s performance compared to the responsibilities outlined in the job description</li>
+      </ol>
+    </div>
+    <hr>
+    <dl>
+        These tips can help HR professionals build job descriptions that attract suitable candidates:
+       <dt>Include essential information in separate sections:</dt>
+       <dd>A company overview, job summary, and an explanation of required responsibilities, skills, and qualifications help candidates determine if the position is appropriate for them. Specify the job’s benefits and perks as well—it can tip the scales for curious candidates.</dd>
+       <dt>Make sure your descriptions are well-written:</dt>
+       <dd>The quality of the job description reflects directly on the company ethos. An engaging, comprehensive, and concise job description demonstrates professionalism and trustworthiness.</dd>
+    </dl>
+    
+
+    </body>
+</html>
